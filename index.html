@@ -53,6 +53,31 @@
   <div class="container">
     
     <article>
+      <h1 class="title"><a href="https://2w3.github.io/posts/submodule/">Submodule</a></h1>
+      <h2 class="subtitle is-5">August 29, 2017</h2>
+      
+      <div class="content">
+        1. git submodule repository에서 다른 repository를 하위 directory형태로 관리할 수 있도록 해준다.
+다른 repository를 directory형태로 포함하는 repository를 superproject라 부른다.
+submodule repository는 submodule id, submodule path와 submodule repository url를 저장하여 superproject와 구분한다.
+2. create submodule git submodule add {repository url} {submodule name}
+cat .gitmodules
+[submodule &quot;swift-style-guide&quot;] path = swift-style-guide url = https://github.com/github/swift-style-guide  git commit -a -m {commit message}
+git push
+3. update submodule git submodule init
+git submodule update
+        
+        ...<a class="button is-link" href="https://2w3.github.io/posts/submodule/" style="height:28px">
+          Read more
+          <span class="icon is-small">
+            <i class="fa fa-angle-double-right"></i>
+          </span>
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
       <h1 class="title"><a href="https://2w3.github.io/posts/hugo/">Hugo</a></h1>
       <h2 class="subtitle is-5">August 11, 2017</h2>
       

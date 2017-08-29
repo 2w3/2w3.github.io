@@ -6,10 +6,27 @@
     <description>Recent content in Posts on 2w3.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 11 Aug 2017 19:45:21 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 29 Aug 2017 17:52:48 +0900</lastBuildDate>
     
 	<atom:link href="https://2w3.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Submodule</title>
+      <link>https://2w3.github.io/posts/submodule/</link>
+      <pubDate>Tue, 29 Aug 2017 17:52:48 +0900</pubDate>
+      
+      <guid>https://2w3.github.io/posts/submodule/</guid>
+      <description>1. git submodule repository에서 다른 repository를 하위 directory형태로 관리할 수 있도록 해준다.
+다른 repository를 directory형태로 포함하는 repository를 superproject라 부른다.
+submodule repository는 submodule id, submodule path와 submodule repository url를 저장하여 superproject와 구분한다.
+2. create submodule git submodule add {repository url} {submodule name}
+cat .gitmodules
+[submodule &amp;quot;swift-style-guide&amp;quot;] path = swift-style-guide url = https://github.com/github/swift-style-guide  git commit -a -m {commit message}
+git push
+3. update submodule git submodule init
+git submodule update</description>
+    </item>
     
     <item>
       <title>Hugo</title>

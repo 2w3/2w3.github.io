@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="keyword 1, keyword 2, keyword 3" name="keywords">
+<meta content="Mark Lee" name="author">
+<meta property="og:title" content="Submodule - 2w3.github.io">
+<meta property="og:url" content="https://2w3.github.io/posts/submodule/">
+<meta property="og:description" content="description here">
+<meta property="og:type" content="website" />
+<title>Submodule | 2w3.github.io</title>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<link rel="stylesheet" href="https://2w3.github.io//css/style.css">
+<link rel="shortcut icon" href="https://2w3.github.io//wave.ico">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/github.min.css">
+
+</head>
+
+<body>
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://2w3.github.io/"><h1 class="title is-4">2w3.github.io</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="/index.xml" target="_blank">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Submodule</h1>
+    <h2 class="subtitle is-5">August 29, 2017 by Mark Lee</h2>
+    
+    <div class="content">
+      
+
+<h2 id="1-git-submodule">1. git submodule</h2>
+
+<p>repository에서 다른 repository를 하위 directory형태로 관리할 수 있도록 해준다.<br />
+다른 repository를 directory형태로 포함하는 repository를 superproject라 부른다.<br />
+submodule repository는 submodule id, submodule path와 submodule repository url를 저장하여 superproject와 구분한다.</p>
+
+<h2 id="2-create-submodule">2. create submodule</h2>
+
+<p><code>git submodule add {repository url} {submodule name}</code></p>
+
+<p><code>cat .gitmodules</code></p>
+
+<pre><code>[submodule &quot;swift-style-guide&quot;]
+    path = swift-style-guide
+    url = https://github.com/github/swift-style-guide
+</code></pre>
+
+<p><code>git commit -a -m {commit message}</code><br />
+<code>git push</code></p>
+
+<h2 id="3-update-submodule">3. update submodule</h2>
+
+<p><code>git submodule init</code><br />
+<code>git submodule update</code></p>
+
+<p>다수의 submodule update<br />
+<code>git submodule foreach 'git pull'</code></p>
+
+<h2 id="4-remove-submodule">4. remove submodule</h2>
+
+<p><code>git submodule deinit -f -- {submodule path}</code><br />
+<code>rm -rf .git/modules/{submodule path}</code><br />
+<code>git rm --cached {submodule path}</code><br />
+don&rsquo;t include a trailing slash &ndash;that will lead to an error.</p>
+
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js" integrity="sha256-+bhVTaRmJ/c07eV80nU8gD2cBBF0rYkf1txqXlrbvb0=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/go.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/dockerfile.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'trackingcode', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+</body>
