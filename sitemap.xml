@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://2w3.github.io/posts/remove_ds_store/</loc>
+    <lastmod>2017-11-03T16:11:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://2w3.github.io/posts/submodule/</loc>
     <lastmod>2017-08-29T17:52:48+09:00</lastmod>
   </url>
@@ -14,7 +19,7 @@
   
   <url>
     <loc>https://2w3.github.io/</loc>
-    <lastmod>2017-08-29T17:52:48+09:00</lastmod>
+    <lastmod>2017-11-03T16:11:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -25,7 +30,7 @@
   
   <url>
     <loc>https://2w3.github.io/posts/</loc>
-    <lastmod>2017-08-29T17:52:48+09:00</lastmod>
+    <lastmod>2017-11-03T16:11:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   

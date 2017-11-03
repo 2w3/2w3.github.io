@@ -6,10 +6,21 @@
     <description>Recent content in Posts on 2w3.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Tue, 29 Aug 2017 17:52:48 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 03 Nov 2017 16:11:00 +0900</lastBuildDate>
     
 	<atom:link href="https://2w3.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>remove .DS_Store recursively</title>
+      <link>https://2w3.github.io/posts/remove_ds_store/</link>
+      <pubDate>Fri, 03 Nov 2017 16:11:00 +0900</pubDate>
+      
+      <guid>https://2w3.github.io/posts/remove_ds_store/</guid>
+      <description> open terminal
+ cd to/your/directory
+ find . -name &amp;lsquo;.DS_Store&amp;rsquo; -type f -delete  </description>
+    </item>
     
     <item>
       <title>Submodule</title>
